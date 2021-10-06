@@ -7,6 +7,14 @@ function App() {
   const APP_ID = '19C7D50E-9C23-4401-803B-6A916CA0C317'
   const USER_ID = 'Joshua Needham'
 
+  if (Notification.permission === 'granted') {
+    console.log(Notification.permission)
+  } else if (Notification.permission !== 'denied') {
+    Notification.requestPermission().then(permission => {
+      console.log(permission)
+    })
+  }
+
 
   return (
     <div className="App">
