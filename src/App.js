@@ -1,7 +1,7 @@
 import { App as SendbirdApp } from 'sendbird-uikit'
 import 'sendbird-uikit/dist/index.css'
 import WelcomeMessage from './WelcomeMessage.jsx'
-
+import BrowserNotification from './BrowserNotification.jsx'
 import {
   APP_ID,
   USER_ID,
@@ -22,6 +22,7 @@ function App() {
 
   return (
     <div className="App">
+      <BrowserNotification />
       <WelcomeMessage />
       <SendbirdApp
         appId={APP_ID}
