@@ -22,8 +22,8 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserNotification />
       <WelcomeMessage />
+      <BrowserNotification />
       <SendbirdApp
         appId={APP_ID}
         userId={USER_ID}
